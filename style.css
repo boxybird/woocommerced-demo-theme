@@ -1,0 +1,109 @@
+/*
+ Theme Name: WooCommerce Demo Theme
+ Author: Andrew Rhyand
+ Author URI: https://andrewrhyand.com
+ Description: A bare-bones theme to test WooCommerce plugin(s).
+ Version: 0.1.0
+ License: MIT
+ */
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem 5rem;
+    overflow-y: scroll;
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+    padding: 3rem 0 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+header a,
+nav a {
+    text-decoration: none;
+}
+
+nav:not(.woocommerce-breadcrumb) {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+img,
+.wp-block-cover {
+    border-radius: 0.5rem;
+}
+
+input {
+    padding: 0.5rem 0.15rem;
+}
+
+select {
+    padding: 0.6rem 1.15rem;
+}
+
+.secondary-nav-wrapper nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 375px;
+}
+
+.woocommerce-content-wrapper {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 300px 1fr;
+}
+
+span.onsale {
+    display: none;
+}
+
+.woocommerce nav.woocommerce-pagination {
+    justify-content: center;
+}
+
+.woocommerce-loop-product__title {
+    padding: 0 !important;
+    margin: 0.5em 0 !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.summary .product_title.entry-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.variations .label {
+    background-color: #e8e6ec;
+}
+
+.woocommerce-product-gallery .flex-control-nav.flex-control-thumbs {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem !important;
+}
